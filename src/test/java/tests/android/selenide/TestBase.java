@@ -27,11 +27,11 @@ public class TestBase {
 
     @AfterEach
     void tearDown() {
-        String sessionId = sessionId().toString();
-        Attach.screenshotAs("Last screenshot");
-        Attach.pageSource();
+//        String sessionId = sessionId().toString();
+//        Attach.screenshotAs("Last screenshot");
+//        Attach.pageSource();
 
         closeWebDriver();
-        Attach.addVideo(sessionId);
+//        Attach.addVideo(sessionId);
     }
 }
