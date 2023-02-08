@@ -18,7 +18,7 @@ public class SearchTests extends TestBase {
             $(id("org.wikipedia.alpha:id/search_src_text")).sendKeys("BrowserStack");
         });
         step("Verify content found", () -> {
-            $$(id("org.wikipeida.alpha:id/page_list_item_title"))
+            $$(id("org.wikipedia.alpha:id/page_list_item_title"))
                     .shouldHave(sizeGreaterThan(0));
         });
     }
